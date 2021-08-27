@@ -55,7 +55,7 @@ function TabOneNavigator() {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
-        name="TabOneScreen"
+        name="Home"
         component={TabOneScreen}
         options={{ headerTitle: 'SafaricomApp Clone' }}
       />
@@ -69,7 +69,7 @@ function TabTwoNavigator() {
   return (
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
-        name="TabTwoScreen"
+        name="Account"
         component={TabTwoScreen}
         options={{ headerTitle: 'Account' }}
       />
