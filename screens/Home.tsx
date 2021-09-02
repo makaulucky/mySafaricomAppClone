@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { StyleSheet, SafeAreaView } from 'react-native';
-
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import { StyleSheet, SafeAreaView,ScrollView } from 'react-native';
+import { SafeAreaProvider} from 'react-native-safe-area-context';
 import TopBar from '../components/TopBar'
-
+import GridContent from '../components/GridContent';
+import { View } from '../components/Themed';
 export default function Home() {
   return (
     
-    <SafeAreaView >
-      <View>
-        <TopBar/>          
-      </View>
-    </SafeAreaView>
+    <SafeAreaProvider > 
+        <TopBar/>
+        <ScrollView >
+        <GridContent/>
+        </ScrollView>
+    </SafeAreaProvider>
     
   );
 }

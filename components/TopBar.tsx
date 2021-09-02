@@ -5,8 +5,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default class TopBar extends Component {
     render() {
         return (
-            <SafeAreaView style={styles.container}>
-                                
+            <View style={styles.container}>
+                <View>                                
                 <View style={styles.topbar}>                    
                     <Text style={styles.title}> Good Morning Lucky </Text>
                 </View>
@@ -16,7 +16,8 @@ export default class TopBar extends Component {
                     onPress={()=> alert('You pressed view my balance')}
                     />
                 </View>
-            </SafeAreaView>
+            </View>
+            </View>
         )
     }
 }
@@ -24,21 +25,23 @@ export default class TopBar extends Component {
 //create styles for this component
 const styles= StyleSheet.create({
     container: {
-        backgroundColor: "green",
-        width:"100%",
-        height:115,
+        backgroundColor: "green",        
         alignItems: "center",
-        marginTop: 2,
-
+        justifyContent: "center",
+        flexDirection: "column",
+        padding: 10,
+        paddingTop: 30,
+        paddingBottom: 30,
+        paddingLeft: 20,
+        paddingRight: 20,
     },
     title: {
         fontSize: 24,
-        padding: 15,
         },
     button: {
-        backgroundColor: "white",
-        fontSize: 24,
-
+        marginTop: 20,
+        marginBottom: 20,
+        padding: 0,
     },
 
     topbar: {
