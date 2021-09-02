@@ -12,7 +12,6 @@ export default class TopBar extends Component {
                 </View>
                 <View style={styles.button}>
                     <Button
-                    styles={styles.button}
                     title="View my balances"
                     onPress={()=> alert('You pressed view my balance')}
                     />
